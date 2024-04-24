@@ -1,0 +1,232 @@
+:root {
+    --main-color: #ff206e;
+}
+
+body {
+    font-family: 'segoe ui light';
+}
+
+
+#main-nav {
+    transition: background-color 1s;
+}
+
+
+.text-main {
+    color: var(--main-color);
+}
+
+.home {
+    background-image: url(../images//bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.title h2,
+.title h3 {
+    letter-spacing: 3px;
+    font-weight: 800;
+
+}
+
+.title h2 {
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+
+
+}
+
+#about {
+    background-image: url(../images/light_dot.jpg);
+}
+
+#servises {
+    background-image: url(../images/dark_dot.jpg);
+    /* background-size: cover; */
+    background-position: center center;
+}
+
+#servises h2 {
+    color: #222;
+}
+
+#servises h3,
+#servises>p {
+    color: #fff;
+}
+
+#servises h4 {
+    position: relative;
+}
+
+#servises h4:after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 5px 0px;
+
+
+}
+
+.feedback-img {
+    width: 80px;
+    border: 2px solid #f4f4f4;
+    transform: translateY(50%);
+}
+
+.client-feed {
+    border: 2px solid #f4f4f4;
+
+}
+
+.brdr {
+    width: 10%;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+
+#btnUp {
+    background-color: #ff206e;
+    color: #fff;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    border-radius: 50%;
+    /* display: none;*/
+}
+
+#sideBar {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.box {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.img-item {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#sideBar i {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    background-color: #222;
+}
+
+.color-item {
+    width: 32px;
+    height: 32px;
+
+    background-color: teal;
+    display: inline-block;
+    cursor: pointer;
+}
